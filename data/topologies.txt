@@ -1,0 +1,3 @@
+D:\.dev\Julia\MINDFulGLMakieApp.jl\examples\topologies\4nets.graphml
+D:\.dev\Julia\MINDFulGLMakieApp.jl\examples\topologies\nobel-germany.graphml
+D:\.dev\Julia\MINDFulGLMakieApp.jl\examples\topologies\nobel-germany-france-topzoo.graphml

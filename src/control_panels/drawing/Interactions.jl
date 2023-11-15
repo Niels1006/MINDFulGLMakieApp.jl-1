@@ -13,9 +13,9 @@ function init_control_panel_drawing(member_variables)
 
 
     #Create Buttons
-    member_variables.interactables["drawing"]["buttons"]["draw"] = Button(fig[1, 1][1, 1][2, 0:1], label="Draw")
-    member_variables.interactables["drawing"]["buttons"]["delete"] = Button(fig[1, 1][1, 1][4, 0:1], label="Delete")
-    member_variables.interactables["drawing"]["buttons"]["fullscreen"] = Button(fig[1, 1][1, 1][3, 0:1], label="Fullscreen")
+    member_variables.interactables["drawing"]["buttons"]["draw"] = Makie.Button(fig[1, 1][1, 1][2, 0:1], label="Draw")
+    member_variables.interactables["drawing"]["buttons"]["delete"] = Makie.Button(fig[1, 1][1, 1][4, 0:1], label="Delete")
+    member_variables.interactables["drawing"]["buttons"]["fullscreen"] = Makie.Button(fig[1, 1][1, 1][3, 0:1], label="Fullscreen")
 
     #Create Button Listeners
     on(member_variables.interactables["drawing"]["buttons"]["draw"].clicks) do s

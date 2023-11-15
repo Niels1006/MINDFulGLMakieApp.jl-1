@@ -35,7 +35,6 @@ function get_subnet_amount(topology, member_variables)
                     MINDF.TransmissionProps(1600.0u"km", 300, 6),
                     MINDF.TransmissionProps(480.0u"km", 400, 6)], 0, 8))
     ]
-
     myibns =
         let
             # read in the NestedGraph

@@ -1,8 +1,9 @@
 export MINDFulGLMakieApp
 
 module MINDFulGLMakieApp
-    using GLMakie
+    using WGLMakie
     using MINDFul
+    using JSServe
 
     const MINDF = MINDFul
 

@@ -7,14 +7,14 @@ function init_control_panel_intent_actions(member_variables)
         options=["shortestavailpath"])
 
     #Create Buttons
-    member_variables.interactables["intent_actions"]["buttons"]["deploy_intent"] = Button(fig[1, 1][1, 1][3, 0:1], label="Compile")
-    member_variables.interactables["intent_actions"]["buttons"]["install_intent"] = Button(fig[1, 1][1, 1][4, 0:1], label="Install")
-    member_variables.interactables["intent_actions"]["buttons"]["uninstall_intent"] = Button(fig[1, 1][1, 1][4, 2:3], label="Uninstall")
-    member_variables.interactables["intent_actions"]["buttons"]["uncompile_intent"] = Button(fig[1, 1][1, 1][3, 2:3], label="Uncompile")
-    member_variables.interactables["intent_actions"]["buttons"]["remove_intent"] = Button(fig[1, 1][1, 1][2, 0:1], label="Remove")
+    member_variables.interactables["intent_actions"]["buttons"]["deploy_intent"] = Makie.Button(fig[1, 1][1, 1][3, 0:1], label="Compile")
+    member_variables.interactables["intent_actions"]["buttons"]["install_intent"] = Makie.Button(fig[1, 1][1, 1][4, 0:1], label="Install")
+    member_variables.interactables["intent_actions"]["buttons"]["uninstall_intent"] = Makie.Button(fig[1, 1][1, 1][4, 2:3], label="Uninstall")
+    member_variables.interactables["intent_actions"]["buttons"]["uncompile_intent"] = Makie.Button(fig[1, 1][1, 1][3, 2:3], label="Uncompile")
+    member_variables.interactables["intent_actions"]["buttons"]["remove_intent"] = Makie.Button(fig[1, 1][1, 1][2, 0:1], label="Remove")
 
     state = get_intent_state(find_intent_in_loaded_by_name(member_variables, member_variables.interactables["intent_actions"]["menus"]["loaded_intents"].selection[]))
-    member_variables.interactables["intents"]["buttons"]["intent_state"] = Button(fig[1, 1][1, 1][5, 0:3], label="State: " * string(state.state), buttoncolor=RGBf(1, 1, 1), buttoncolor_active=RGBf(1, 1, 1), buttoncolor_hover=RGBf(1, 1, 1))
+    member_variables.interactables["intents"]["buttons"]["intent_state"] = Makie.Button(fig[1, 1][1, 1][5, 0:3], label="State: " * string(state.state), buttoncolor=RGBf(1, 1, 1), buttoncolor_active=RGBf(1, 1, 1), buttoncolor_hover=RGBf(1, 1, 1))
 
 
 

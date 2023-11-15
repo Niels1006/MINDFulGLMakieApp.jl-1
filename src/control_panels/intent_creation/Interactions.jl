@@ -31,8 +31,8 @@ function init_control_panel_intents(member_variables)
     member_variables.interactables["intents"]["menus"]["node_2_subnet"] = Menu(fig[1, 1][1, 1][3, 0:1], options=["Topology NA"])
 
     #Buttons
-    member_variables.interactables["intents"]["buttons"]["create_new_intent"] = Button(fig[1, 1][1, 1][3, 4:5], label="Create")
-    member_variables.interactables["intents"]["buttons"]["delete_topology"] = Button(fig[1, 1][1, 1][2, 4:5], label="Delete Top")
+    member_variables.interactables["intents"]["buttons"]["create_new_intent"] = Makie.Button(fig[1, 1][1, 1][3, 4:5], label="Create")
+    member_variables.interactables["intents"]["buttons"]["delete_topology"] = Makie.Button(fig[1, 1][1, 1][2, 4:5], label="Delete Top")
     #member_variables.interactables["intents"]["buttons"]["refresh_top"] = Button(fig[1, 1][1, 1][4, 4:5], label="Refresh Top")
 
     #text boxes

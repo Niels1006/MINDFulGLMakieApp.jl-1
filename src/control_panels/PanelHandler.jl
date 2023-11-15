@@ -149,7 +149,7 @@ function main!(fig)
 
         gl_hidden[1, 1][1, 1] = content(member_variables.fig[1, 1][1, 1])
 
-        member_variables.interactables["drawing"]["buttons"]["end_fullscreen"] = Button(fig[1, 1], label="End Fullscreen")
+        member_variables.interactables["drawing"]["buttons"]["end_fullscreen"] = Makie.Button(fig[1, 1], label="End Fullscreen")
         on(member_variables.interactables["drawing"]["buttons"]["end_fullscreen"].clicks) do r
             member_variables.interactables_observables["drawing"]["buttons"]["end_fullscreen"][] = !member_variables.interactables_observables["drawing"]["buttons"]["end_fullscreen"][]
             delete!(member_variables.interactables["drawing"]["buttons"]["end_fullscreen"])
@@ -196,9 +196,9 @@ function init_member_variables!(fig)
             ),
             "intents" => Dict(
                 "buttons" => Dict(
-                    "create_new_intent" => Button(fig[1, 1][1, 1][1, 1], label="a"),
-                    "save_intent" => Button(fig[1, 1][1, 1][1, 1], label="a"),
-                    "delete_intent" => Button(fig[1, 1][1, 1][1, 1], label="a")
+                    "create_new_intent" => Makie.Button(fig[1, 1][1, 1][1, 1], label="a"),
+                    "save_intent" => Makie.Button(fig[1, 1][1, 1][1, 1], label="a"),
+                    "delete_intent" => Makie.Button(fig[1, 1][1, 1][1, 1], label="a")
                 ),
                 "menus" => Dict(
                     "topology" => Menu(fig[1, 1][1, 1][1, 1], options=["a"]),
@@ -220,7 +220,7 @@ function init_member_variables!(fig)
                     "draw_position" => Menu(fig[1, 1][1, 1][1, 1], options=["a"])
                 ),
                 "buttons" => Dict(
-                    "draw" => Button(fig[1, 1][1, 1][1, 1], label="a")
+                    "draw" => Makie.Button(fig[1, 1][1, 1][1, 1], label="a")
                 )
             ),
             "intent_actions" => Dict(
@@ -294,10 +294,17 @@ end
 
 function startup()
     #start the GUI Wrapper
+
+    Page(exportable=false, offline=false)
+    WGLMakie.activate!()
+
+
     fig = Figure(resolution=(1800, 1200))
     fig_configured = main!(fig)
-    display(fig_configured)
+    #display(fig_configured)
     set_theme!(fontsize=20) #fontsize can get changed
+
+    fig_configured
 
 end
 
