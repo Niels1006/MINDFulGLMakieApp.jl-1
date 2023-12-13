@@ -14,6 +14,8 @@ function run()
 end
 
 function test()
-    graphs = MFA.get_graph_names()
+    testing()
+
+
 end
 

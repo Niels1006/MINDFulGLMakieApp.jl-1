@@ -2,7 +2,7 @@
 
 julia_version = "1.9.1"
 manifest_format = "2.0"
-project_hash = "9d3e51c39ca6be55a2f9044488aec6cee51022ce"
+project_hash = "e576f7b8a6ff95da252da6a536c7939ba227c8b7"
 
 [[deps.AbstractFFTs]]
 deps = ["LinearAlgebra"]
@@ -1010,6 +1010,12 @@ deps = ["Artifacts", "Libdl"]
 uuid = "05823500-19ac-5b8b-9628-191a04bc5112"
 version = "0.8.1+0"
 
+[[deps.OpenSSH_jll]]
+deps = ["Artifacts", "JLLWrappers", "Libdl", "OpenSSL_jll", "Pkg", "Zlib_jll"]
+git-tree-sha1 = "1b2f042897343a9dfdcc9366e4ecbd3d00780c49"
+uuid = "9bd350c2-7e96-507f-8002-3f2e150b4e1b"
+version = "8.9.0+1"
+
 [[deps.OpenSSL_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
 git-tree-sha1 = "1aa4b74f80b01c6bc2b89992b861b5f210e665b5"
@@ -1184,6 +1190,18 @@ deps = ["SHA", "Scratch"]
 git-tree-sha1 = "90bc7a7c96410424509e4263e277e43250c05691"
 uuid = "05181044-ff0b-4ac5-8273-598c1e38db00"
 version = "1.0.0"
+
+[[deps.RemoteREPL]]
+deps = ["Logging", "OpenSSH_jll", "REPL", "ReplMaker", "Serialization", "Sockets"]
+git-tree-sha1 = "42618f51c9c813f0c665dc4fe56dc2d5d90baab9"
+uuid = "1bd9f7bb-701c-4338-bec7-ac987af7c555"
+version = "0.2.17"
+
+[[deps.ReplMaker]]
+deps = ["REPL", "Unicode"]
+git-tree-sha1 = "f8bb680b97ee232c4c6591e213adc9c1e4ba0349"
+uuid = "b873ce64-0db9-51f5-a568-4457d8e49576"
+version = "0.2.7"
 
 [[deps.Requires]]
 deps = ["UUIDs"]

@@ -14,6 +14,17 @@ It is still in a very early state, so there is much more to come. This only show
 - You can zoom, stretch and move all graphs. Or even make it fullscreen.
 
 
+## Deployment
+
+To deploy this project run
+
+```bash
+-$ Julia -i src/Main.jl
+```
+
+
+
+
 ## Screenshots
 
 ![App Screenshot](https://i.imgur.com/561Cu5J.png)
@@ -35,4 +46,5 @@ Or make it fullscreen.
 
 - [MINDFul.jl](https://github.com/UniStuttgart-IKR/MINDFul.jl)
 - [MINDFulMakie.jl](https://github.com/UniStuttgart-IKR/MINDFulMakie.jl)
+
 

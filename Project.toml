@@ -19,7 +19,9 @@ NestedGraphMakie = "6f6f4c20-e954-4c6d-a185-c2fbf890196e"
 NestedGraphs = "03c36417-ddab-428a-818d-5359aee292ef"
 NestedGraphsIO = "4bcdce80-1129-4e34-b1b9-f101712b434d"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+RemoteREPL = "1bd9f7bb-701c-4338-bec7-ac987af7c555"
 StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
 Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 
 [compat]
